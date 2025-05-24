@@ -7,9 +7,8 @@ const int pinCapteur2 = 39; //voie2
 void setup() 
 {
   Serial.begin(115200);
-  Wire.beginTransmission(0x3D);//0x3D adresse
-
-  Wire.write(3);//mettre sous tension tous les capteurs
+  Wire.beginTransmission(0x3D);//0x3D adress
+  Wire.write(3);
   Wire.endTransmission();
 }
 
